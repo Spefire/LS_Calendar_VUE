@@ -1,0 +1,33 @@
+@import "../../../styles/variables.scss";
+
+.schedule-date {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+
+  .calendar-header {
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 0 5px 0;
+
+    span {
+      font-weight: bold;
+    }
+  }
+
+  .calendar-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+
+    /*th,
+    td {
+      height: 40px;
+      width: 40px;
+
+      &.selected {
+        border-radius: 10px;
+        background: $light-grey-color;
+      }
+    }*/
+  }
+}
